@@ -5,12 +5,17 @@
   "license": "MIT",
   "scripts": {
     "test": "./node_modules/.bin/jest",
-    "lint": "eslint --fix src/**/*.js"
+    "lint": "eslint --fix src/**/*.js",
+    "start": "babel-node src/index.js"
   },
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.7",
+    "@babel/preset-env": "^7.14.7",
+    "babel-eslint": "^10.1.0",
     "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",

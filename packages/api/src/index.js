@@ -1,11 +1,11 @@
-const express = require("express");
+import express from "express";
+import { registerRoutes } from "./structures/registry";
 const app = express();
 
-// eslint-disable-next-line no-unused-vars
-app.get("/", (req, res) => {
-  console.log("Api");
-});
+(async () => {
+  await registerRoutes(app);
+})();
 
 app.listen(8080, () => {
-  console.log("server started");
+  console.log("server running on port 8080");
 });
