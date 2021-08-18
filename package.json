@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "prepare": "husky install",
+    "api:run": "node packages/api/index.js",
+    "web:run": "npm run dev",
+    "test": "lerna run test",
+    "lerna:lint": "lerna run lint"
+  },
+  "dependencies": {
+    "lerna": "^4.0.0"
+  },
+  "name": "un-mentor-pour-tous",
+  "devDependencies": {
+    "husky": "^7.0.1"
+  }
+}
